@@ -52,7 +52,7 @@ namespace AuthenticationServiceConsumer
             }
 
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
