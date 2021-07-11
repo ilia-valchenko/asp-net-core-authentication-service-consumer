@@ -10,6 +10,9 @@ namespace AuthenticationServiceConsumer.Controllers
 
     // [Authorize] is it a filter? Is it a part of MVC filter pipeline?
 
+    // Note: You will have to use Authentication middleware in order to use [Authorize] attribute.
+    // Go to the Startup.cs and add the following code: app.UseAuthentication().
+
     [Route("api/[controller]")]
     [ApiController]
     [Authorize]
